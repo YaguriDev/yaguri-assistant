@@ -1,0 +1,47 @@
+{
+  "model": "vosk-ru",
+  "voice": "ru_RU-irina-medium",
+  "debug": true,
+  "triggerWord": "слушай",
+  "commands": {
+    "open": {
+      "aliases": ["открой", "запуск", "запусти"],
+      "args": {
+        "notepad": {
+          "aliases": ["блокнот", "текстовый редактор"],
+          "action": "notepad.exe",
+          "tts": "Открываю блокнот"
+        },
+        "calculator": {
+          "aliases": ["калькулятор"],
+          "action": "calc.exe",
+          "tts": "Открываю калькулятор"
+        }
+      }
+    },
+    "paste": {
+      "aliases": ["ответь", "вставь"],
+      "args": {
+        "hello": {
+          "aliases": ["приветствие", "привет"],
+          "action": "text",
+          "value": "Здравствуйте!",
+          "tts": "Вставляю приветствие."
+        },
+        "goodbye": {
+          "aliases": ["прощание", "пока"],
+          "action": "text",
+          "value": "До свидания!",
+          "tts": false
+        },
+        "wow": {
+          "aliases": ["большое удивление"],
+          "action": "text",
+          "value": "Большое удивление",
+          "tts": "Большое удивление"
+        }
+      }
+    }
+  },
+  "mic": null
+}
